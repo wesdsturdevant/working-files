@@ -1,0 +1,89 @@
+.MMM-MyCalendar {
+  max-width: 500px;
+}
+
+.MMM-MyCalendar * {
+  box-model: border-box;
+}
+
+.MMM-MyCalendar .calendar-events-list {
+  width: 100%;
+}
+
+.MMM-MyCalendar .calendar-event {
+  display: block;
+  width: 100%;
+  position: relative;
+  font-size: 20px;
+  line-height: 24px;
+  border-bottom: solid 1px #caab7d;
+  padding: 4px 0;
+}
+
+.MMM-MyCalendar .calendar-event .event-icon {
+  position: absolute;
+  color: #F00;
+  top: 4px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.MMM-MyCalendar .calendar-event .event-icon .calendar-icon {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  fill: currentColor;
+}
+
+.MMM-MyCalendar .calendar-event .event-icon .date-number {
+  font-weight: bold;
+  font-size: 17px;
+  color:white;
+  position: relative;
+  top: 10px;
+  padding-left: 7px;
+}
+
+.MMM-MyCalendar .calendar-event .title,
+.MMM-MyCalendar .calendar-event .time,
+.MMM-MyCalendar .calendar-event .location {
+  display: block;
+  padding-left: 35px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.MMM-MyCalendar .calendar-event .title {
+  color: #e5d3a3;
+  padding-top: 2px;
+}
+.MMM-MyCalendar .calendar-event .time,
+.MMM-MyCalendar .calendar-event .location {
+  font-size: 16px;
+}
+
+/** Column layout **/
+.MMM-MyCalendar .wrapper.with-columns .calendar-events-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.MMM-MyCalendar .wrapper.with-columns .calendar-events-list .calendar-event {
+  width: 50%;
+}
+
+.MMM-MyCalendar .wrapper.with-columns .calendar-events-list .calendar-event .title {
+  padding-right: 10px;
+}
+
+
+
